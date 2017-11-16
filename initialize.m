@@ -43,12 +43,12 @@ addpath(genpath(endres_path));
 %% configuring rantalankila %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-addpath(genpath([pwd '/dependencies']));
-addpath(genpath([pwd '/rantalankilaSegments']));
-configjson.rantalankila.rapath =   [pwd '/rantalankilaSegments'];
-configjson.rantalankila.vlfeatpath = [ pwd '/dependencies/vlfeat-0.9.16/' ];
-spagglom_options;
-configjson.rantalankila.params=opts;
+% addpath(genpath([pwd '/dependencies']));
+% addpath(genpath([pwd '/rantalankilaSegments']));
+% configjson.rantalankila.rapath =   [pwd '/rantalankilaSegments'];
+% configjson.rantalankila.vlfeatpath = [ pwd '/dependencies/vlfeat-0.9.16/' ];
+% spagglom_options;
+% configjson.rantalankila.params=opts;
 %%%%%%%%%%%%%%%%%%%%%%%
 %% configuring rahtu %%
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -105,7 +105,7 @@ configjson.objectness.params=params;
    else
        % if unix/linux
        fprintf('linux var set for rigor \n');
-       boost_libs = '/usr/local/lib';
+       boost_libs = '/usr/lib/x86_64-linux-gnu/';
        boost_lib_opt = ['-L', boost_libs];
        extra_opts = '-lrt';
    end

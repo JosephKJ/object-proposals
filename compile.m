@@ -89,7 +89,7 @@ try
 	addpath(genpath([pwd '/mcg/MCG-pre-trained']));
 	%set root_dir for mcg
 	mcgRootDir = mcg_path;
-        boostPath='/opt/local/include/';
+        boostPath='/usr/lib/x86_64-linux-gnu/';
 	%build and install
 	mcg_build(parDir, mcgRootDir, boostPath);
 	%mcg_install(mcgRootDir);
@@ -259,7 +259,7 @@ end
    else
        % if unix/linux
        fprintf('linux var set for rigor \n');
-       boost_libs = '/usr/local/lib';
+       boost_libs = '/usr/lib/x86_64-linux-gnu';
        boost_lib_opt = ['-L', boost_libs];
        extra_opts = '-lrt';
    end
@@ -299,7 +299,7 @@ try
        '%s/dynamicgraphs/bk_kohli.cpp ', ...
        '%s/dynamicgraphs/bk_multiseeddynamic.cpp ', ...
        '%s/dynamicgraphs/bk_utils.cpp %s %s %s -ltbb ', ...
-       'LDFLAGS="\\$LDFLAGS %s -lboost_system-mt -lboost_timer-mt %s" ', ...
+       'LDFLAGS="\\$LDFLAGS %s -lboost_system -lboost_timer %s" ', ...
        '-output %s/bk_dynamicgraphs_mex;'], ...
        boykov_dir, boykov_dir, boykov_dir, boykov_dir, boykov_dir, ...
        boost_incl_opt, tbb_incl_opt, tbb_lib_opt, boost_lib_opt, ...
