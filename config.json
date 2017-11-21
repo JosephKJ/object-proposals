@@ -135,6 +135,16 @@
             "detector": "MultiScaleStructuredForest",
             "max_iou": 0.9
         }
+    },
+
+    "our_method": {
+        "opts": {
+            "isBaseline": false,
+            "order": "none"
+        },
+        "params": {
+
+        }
     }
 }
 
