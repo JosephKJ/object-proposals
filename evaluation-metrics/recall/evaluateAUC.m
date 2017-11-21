@@ -85,7 +85,7 @@ function evaluateAUC( methods, outputLocation)
     ylim([0 1]);
     xlabel('# candidates'); ylabel(sprintf('recall at IoU threshold %.1f', threshold));
     legend(labels{:}, 'Location', legend_locations{threshold_i});
-    legendshrink(0.5);
+    % legendshrink(0.5);
     legend boxoff;
 %     legend(labels, 'Location', 'SouthEast');
     hei = 10;
