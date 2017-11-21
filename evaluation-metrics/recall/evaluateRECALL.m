@@ -59,7 +59,7 @@ function evaluateRECALL(methods, outputLocation,varargin)
   end	
  
   lgnd = legend(sorted_labels{:}, 'Location', 'NorthEast');
-  legendshrink(0.5);
+  % legendshrink(0.5);
   legend boxoff;
   if(~exist(char(fullfile(outputLocation, ...
           'figures')), 'dir'))
