@@ -48,7 +48,7 @@ function evaluateAUC( methods, outputLocation)
   set(gcf, 'Units','centimeters', 'Position',[0 0 wid hei]);
   set(gcf, 'PaperPositionMode','auto');
 
-  # jkj-change-start
+  % jkj-change-start
   if(~exist(char(fullfile(outputLocation, ...
           'figures')), 'dir'))
             mkdir(char(fullfile(outputLocation, ...
@@ -56,8 +56,8 @@ function evaluateAUC( methods, outputLocation)
     end
       printpdf(char(fullfile(outputLocation,sprintf('figures/num_candidates_area_under_recall.pdf'))));
 
-  # printpdf('figures/num_candidates_area_under_recall.pdf');
-  # jkj-change-end
+  % printpdf('figures/num_candidates_area_under_recall.pdf');
+  % jkj-change-end
 
   % fixed threshold
   legend_locations = {'SouthEast', 'NorthWest', 'NorthWest'};
