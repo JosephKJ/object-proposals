@@ -1,6 +1,6 @@
 {
-    "imageLocation": "/home/joseph/workspace/object-proposals/data/source/",
-    "outputLocation": "/home/joseph/workspace/object-proposals/data/target/",
+    "imageLocation": "/home/joseph/workspace/object-proposals/data/source",
+    "outputLocation": "/home/joseph/workspace/object-proposals/data/target",
 
     "edgeBoxes": {
         "opts": {
