@@ -41,7 +41,7 @@ function evaluateAUC( methods, outputLocation)
   ylim([0 1]);
   xlabel('# candidates'); ylabel('area under recall');
   legend(labels{:}, 'Location', 'SouthEast');
-  legendshrink(0.5);
+  % legendshrink(0.5);
   legend boxoff;
   hei = 10;
   wid = 10;
