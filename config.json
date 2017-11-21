@@ -22,6 +22,16 @@
         }
     },
 
+    "our_method": {
+        "opts": {
+            "isBaseline": false,
+            "order": "none"
+        },
+        "params": {
+
+        }
+    },
+
     "endres": {
         "opts": {
             "isBaseline": false,
@@ -134,16 +144,6 @@
             "model": "lpo_VOC_0.1.dat",
             "detector": "MultiScaleStructuredForest",
             "max_iou": 0.9
-        }
-    },
-
-    "our_method": {
-        "opts": {
-            "isBaseline": false,
-            "order": "none"
-        },
-        "params": {
-
         }
     }
 }
