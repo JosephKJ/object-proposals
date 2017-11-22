@@ -61,7 +61,7 @@ function evaluateAUC( methods, outputLocation)
 
   % fixed threshold
   legend_locations = {'SouthEast', 'NorthWest', 'NorthWest'};
-  thresholds = [0.5 0.7 0.8];
+  thresholds = [0.5 0.7 0.8 0.9];
   
   for threshold_i = 1:numel(thresholds)
     threshold = thresholds(threshold_i);
