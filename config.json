@@ -24,7 +24,7 @@
 
     "our_method": {
         "opts": {
-            "isBaseline": false,
+            "isBaseline": true,
             "order": "none"
         },
         "params": {
