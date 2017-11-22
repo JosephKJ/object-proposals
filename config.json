@@ -4,7 +4,7 @@
 
     "edgeBoxes": {
         "opts": {
-            "isBaseline": false,
+            "isBaseline": true,
             "order": "descend"
         },
         "params": {
@@ -24,51 +24,18 @@
 
     "our_method": {
         "opts": {
-            "isBaseline": true,
-            "order": "none"
-        },
-        "params": {
-
-        }
-    },
-
-    "endres": {
-        "opts": {
             "isBaseline": false,
             "order": "none"
         },
         "params": {
 
-        }
-    },
-
-    "mcg": {
-        "opts": {
-            "boostpath": "/opt/local/include/",
-            "isBaseline": false,
-            "order": "descend",
-            "mode": "fast"
-        },
-        "params": {
-            "mode": "accurate",
-            "database": "pascal2012"
         }
     },
 
     "objectness": {
         "opts": {
-            "isBaseline": false,
+            "isBaseline": true,
             "order": "descend"
-        },
-        "params": {
-
-        }
-    },
-
-    "rahtu": {
-        "opts": {
-            "isBaseline": false,
-            "order": "none"
         },
         "params": {
 
@@ -77,7 +44,7 @@
 
     "randomPrim": {
         "opts": {
-        "isBaseline": false,
+        "isBaseline": true,
         "order": "none"
         },
         "params": {
@@ -85,19 +52,10 @@
         }
     },
 
-    "rantalankila": {
-        "opts": {
-            "isBaseline": false,
-            "order": "none"
-        },
-        "params": {
-
-        }
-    },
 
     "selective_search": {
         "opts": {
-            "isBaseline": false,
+            "isBaseline": true,
             "order": "random"
         },
         "params": {
@@ -107,43 +65,6 @@
             "imWidth": 500,
             "mode": "fast",
             "colorTypes": ["Hsv", "Lab", "RGI", "H", "Intensity"]
-        }
-    },
-
-    "rigor": {
-        "opts": {
-            "numProposals": 100,
-            "isbaseline": false,
-            "order": "none"
-        },
-        "params": {
-            "param_set": "@params_default"
-        }
-    },
-
-    "gop": {
-        "opts": {
-            "isBaseline": false,
-            "order": "none"
-        },
-        "params": {
-            "method": "learned",
-            "detector": "MultiScaleStructuredForest",
-            "max_iou": 0.8,
-            "NumberOfSeeds": 140,
-            "NumberOfSegmentationsPerSeed": 5
-        }
-    },
-
-    "lpo" :{
-        "opts":{
-            "isBaseline" :false,
-            "order": "none"
-        },
-        "params":{
-            "model": "lpo_VOC_0.1.dat",
-            "detector": "MultiScaleStructuredForest",
-            "max_iou": 0.9
         }
     }
 }
