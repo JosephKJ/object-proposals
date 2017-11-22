@@ -4,7 +4,7 @@
 
     "edgeBoxes": {
         "opts": {
-            "isBaseline": true,
+            "isBaseline": false,
             "order": "descend"
         },
         "params": {
@@ -34,7 +34,7 @@
 
     "objectness": {
         "opts": {
-            "isBaseline": true,
+            "isBaseline": false,
             "order": "descend"
         },
         "params": {
@@ -44,7 +44,7 @@
 
     "randomPrim": {
         "opts": {
-        "isBaseline": true,
+        "isBaseline": false,
         "order": "none"
         },
         "params": {
@@ -55,7 +55,7 @@
 
     "selectiveSearch": {
         "opts": {
-            "isBaseline": true,
+            "isBaseline": false,
             "order": "random"
         },
         "params": {
