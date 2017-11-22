@@ -38,7 +38,7 @@ function evaluateAUC( methods, outputLocation)
       end
   end
   xlim([10, 1000]);
-  ylim([0 1]);
+  ylim([0 0.6]);
   xlabel('# candidates'); ylabel('area under recall');
   legend(labels{:}, 'Location', 'SouthEast');
   % legendshrink(0.5);
@@ -92,7 +92,7 @@ function evaluateAUC( methods, outputLocation)
 	end
     end
     xlim([10, 1000]);
-    ylim([0 1]);
+    ylim([0 0.6]);
     xlabel('# candidates'); ylabel(sprintf('recall at IoU threshold %.1f', threshold));
     legend(labels{:}, 'Location', legend_locations{threshold_i});
     % legendshrink(0.5);
