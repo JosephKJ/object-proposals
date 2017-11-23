@@ -22,7 +22,7 @@
         }
     },
 
-    "ourMethod": {
+    "MASON": {
         "opts": {
             "isBaseline": false,
             "order": "none"
