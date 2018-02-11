@@ -91,7 +91,7 @@ function evaluateAUC( methods, outputLocation)
          	fprintf('\n****  Continuing ..****\n');
 	end
     end
-    xlim([10, 1000]);
+    xlim([10, 500]);
     ylim([0 1.0]);
     xlabel('# candidates'); ylabel(sprintf('recall at IoU @ %.1f', threshold));
     legend(labels{:}, 'Location', legend_locations{threshold_i});
