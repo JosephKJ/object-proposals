@@ -66,7 +66,7 @@ function evaluateAUC( methods, outputLocation)
   for threshold_i = 1:numel(thresholds)
     threshold = thresholds(threshold_i);
 %     figure;
-    figure('position', [0, 0, 200, 500])  % create new figure with specified size  
+    figure('position', [0, 0, 200, 100])  % create new figure with specified size
     for i = 1:n
       try
       	data = load(char(fullfile(methods.(char(proposalNames(i))).opts.outputLocation,  bestRecallFileName)));
