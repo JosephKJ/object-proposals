@@ -61,7 +61,7 @@ function evaluateAUC( methods, outputLocation)
 
   % fixed threshold
   legend_locations = {'SouthEast', 'NorthWest', 'NorthWest'};
-  thresholds = [0.8 0.9 1.0];
+  thresholds = [0.8 0.9];
   
   for threshold_i = 1:numel(thresholds)
     threshold = thresholds(threshold_i);
@@ -92,8 +92,8 @@ function evaluateAUC( methods, outputLocation)
 	end
     end
     xlim([10, 1000]);
-    ylim([0 0.5]);
-    xlabel('# candidates'); ylabel(sprintf('recall at IoU threshold %.1f', threshold));
+    ylim([0 1.0]);
+    xlabel('# candidates'); ylabel(sprintf('recall at IoU @ %.1f', threshold));
     legend(labels{:}, 'Location', legend_locations{threshold_i});
     % legendshrink(0.5);
     legend boxoff;
