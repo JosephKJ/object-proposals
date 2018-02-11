@@ -67,8 +67,7 @@ function evaluateAUC( methods, outputLocation)
     threshold = thresholds(threshold_i);
 %     figure;
 %     figure('position', [0, 0, 200, 100])  % create new figure with specified size
-    figure (1)
-    hFig = figure(1);
+    hFig = figure;
     set(gcf,'PaperPositionMode','auto')
     set(hFig, 'Position', [0 0 200 100])
     for i = 1:n
